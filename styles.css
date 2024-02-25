@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --color-text: #454545;
+    --color-detail: #1eff00;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(213, 213, 213);
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#player-detail {
+    display: flex;
+    flex-direction: row;
+}
+
+#music-cover {
+    background-color: black;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#music-cover img {
+    max-width: 100%;
+    height: auto;
+}
+
+#details {
+    display: flex;
+    flex-direction: column;
+}
+
+#player-controller {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-self: center;
+    gap: 32px;
+    padding-top: 32px;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+button > span {
+    font-size: 40px !important;
+}
+
+#music-time {
+    padding-top: 6px;
+    width: 100%;
+}
+
+progress {
+    width: 100%;
+}
+
+#times {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+@media screen and (max-width:768px) {
+    #container {
+        padding: 32px;
+    }
+
+    #player-detail {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+
+    #music-cover {
+        width: 180px;
+        height: 180px;
+    }
+
+    #details {
+        align-items: center;
+        gap: 4px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    #music-cover {
+        width: 90px;
+        height: 90px;
+    }
+
+    #container {
+        padding: 24px;
+    }
+
+    #player-detail {
+        align-items: center;
+    }
+
+    #details {
+        padding: 0px 24px;
+    }
+}
+
+@media screen and (min-width:992px) {
+    #container {
+        padding: 24px;
+    }
+
+    #player-detail {
+        align-items: center;
+    }
+
+    #music-cover {
+        width: 128px;
+        height: 128px;
+    }
+
+    #details {
+        padding: 0px 24px;
+    }
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+.btn-hover:hover {
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}

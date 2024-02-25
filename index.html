@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div id="container">
+        <div id="player-detail">
+            <div id="music-cover">
+                <img src="img/Acústico_MTV_-_Charlie_Brown_Jr..jpg" alt="">
+            </div>
+            <div id="details">
+                <h2 id="music-group">Charile Brown Jr</h2>
+                <h3 id="music-name">Céu Azul</h3>
+            </div>
+        </div>
+        <audio id="audio-player" src="music/Charlie Brown Jr - Céu Azul.mp3"></audio>
+        <div id="player-controller">
+            <button>
+                <span class="material-symbols-outlined btn-hover">skip_previous</span>
+            </button>
+            <button id="play-btn" onclick="PlayMusicSwitch()">
+                <span id="play-icon" class="material-symbols-outlined btn-hover">play_arrow</span>
+            </button>
+            <button>
+                <span class="material-symbols-outlined btn-hover">skip_next</span>
+            </button>
+        </div>
+        <div id="music-time">
+            <progress id="audio-progress" value="75" max="100"></progress>
+            <div id="times">
+                <p id="total-time">00:00</p>
+                <p id="current-time">00:00</p>
+            </div>
+        </div>
+    </div>
+    <script defer src="script.js"></script>
+</body>
+</html>
